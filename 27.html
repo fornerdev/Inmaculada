@@ -60,8 +60,8 @@ button:focus-visible{outline:3px solid var(--cream);outline-offset:4px}
 var dec=function(s){return new TextDecoder().decode(Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)}))};
 var out=document.getElementById('out'),btn=document.getElementById('btn');
 btn.addEventListener('click',function(){
-document.getElementById('name').textContent=dec(out.dataset.n);
-if(out.dataset.s){document.getElementById('note').textContent='Meia (parella Sergi)'}
+document.getElementById('name').textContent='Meia';
+document.getElementById('note').textContent='(parella Sergi)';
 btn.style.display='none';out.classList.add('on');
 });
 })();
