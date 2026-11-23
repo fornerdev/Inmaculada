@@ -63,7 +63,7 @@ input:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
 document.getElementById('f').addEventListener('submit',function(e){
 e.preventDefault();
 var t=document.getElementById('numero').value.trim(),n=parseInt(t,10);
-if(!/^\d+$/.test(t)||n<1||n>25){document.getElementById('err').textContent="Aquest número no existeix. Escriu un número de l'1 al 25.";return}
+if(!/^\d+$/.test(t)||n<2||n>30){document.getElementById('err').textContent="Aquest número no existeix. Escriu un número del 2 al 30.";return}
 window.location.href=n+'.html';
 });
 document.getElementById('numero').addEventListener('input',function(){document.getElementById('err').textContent=''});
