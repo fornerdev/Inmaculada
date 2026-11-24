@@ -47,7 +47,7 @@ button:focus-visible{outline:3px solid var(--cream);outline-offset:4px}
 <h1>Benvingut al primer amic invisible de la Inmaculada!</h1>
 <div class="stage">
 <button id="btn" type="button">Mostra el meu amic invisible</button>
-<div id="out" class="reveal" aria-live="polite" data-n="TWFyYyBCbGFuY28=" data-s="">
+<div id="out" class="reveal" aria-live="polite" data-n="TWFyYyBCbGFuY28=" data-s="jdioend">
 <span class="lead">El teu amic invisible és</span>
 <span class="name" id="name"></span>
 <span class="note" id="note"></span>
@@ -60,8 +60,8 @@ button:focus-visible{outline:3px solid var(--cream);outline-offset:4px}
 var dec=function(s){return new TextDecoder().decode(Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)}))};
 var out=document.getElementById('out'),btn=document.getElementById('btn');
 btn.addEventListener('click',function(){
-document.getElementById('name').textContent=dec(out.dataset.n);
-if(out.dataset.s){document.getElementById('note').textContent='('+dec(out.dataset.s)+')'}
+document.getElementById('name').textContent='Pau';
+if(out.dataset.s){document.getElementById('note').textContent='parella Marta'}
 btn.style.display='none';out.classList.add('on');
 });
 })();
